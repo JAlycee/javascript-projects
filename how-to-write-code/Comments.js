@@ -10,3 +10,6 @@
    comments. */
 
    console.log("Comments make your code more readable by others.");
+   // This is the way to write a comment //
+   /* Double line
+   comment right here.*/
