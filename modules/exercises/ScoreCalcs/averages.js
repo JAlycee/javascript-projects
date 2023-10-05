@@ -1,3 +1,7 @@
+module.exports = {
+  averageForStudent: averageForStudent,
+  averageForTest: averageForTest
+};
 function averageForStudent(nameIndex,scores){
   let sum = 0;
   for (let i=0; i<scores.length; i++){

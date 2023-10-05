@@ -1,5 +1,9 @@
 // Code your selectRandomEntry function here:
-
+function selectRandomEntry (arr, num) {
+  
+  let index = Math.() * arr.length
+  //Random number between 0-5. Make random number then push it
+}
 
 // Code your buildCrewArray function here:
 
