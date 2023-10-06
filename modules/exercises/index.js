@@ -1,6 +1,6 @@
 //Import modules:
 const input = require('readline-sync');//Import readline-sync.
-const averages = require('./averages.js'); //Import functions from averages.js.
+const averages = require('./ScoreCalcs/averages.js'); //Import functions from averages.js.
 const printAll = require('./display.js'); //Import function from display.js.
 const randomSelect = require('./randomSelect.js');//Import function from randomSelect.js.
 
@@ -21,12 +21,12 @@ for (let i = 0; i<prompts.length; i++){
       printAll(astronauts, testTitles, scores); //Call 'printAll' here and pass in all necessary arguments.
     } else if (i===1){
       for (let j = 0; j<testTitles.length; j++){
-        let avg = //Call 'averageForTest' here. Pass in j and scores as arguments.
+        let avg = averages.averageForTest(j, scores);//Call 'averageForTest' here. Pass in j and scores as arguments.
         console.log(`${testTitles[j]} test average = ${avg}%.`);
       }
     } else if (i===2){
       for (let j = 0; j<astronauts.length; j++){
-        let avg = //Call 'averageForStudent' here. Pass in j and scores as arguments.
+        let avg = averages.averageForStudent(j, scores);//Call 'averageForStudent' here. Pass in j and scores as arguments.
         console.log(`${astronauts[j]}'s test average = ${avg}%.`);
       }
     } else {
